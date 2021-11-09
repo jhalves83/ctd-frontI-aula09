@@ -6,23 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 09 - Tableless 2/2</title>
     <style type="text/css">
-        
+
+        body {
+            background-color: black;
+            height: 200vh;
+        }
+
+        /* Selecionar todos os elementos */
+        * { 
+            font-family: Arial, Helvetica, sans-serif;
+            /* Configuração do modelo de caixa */
+            box-sizing: border-box;
+        }
+
+        .conteudo {
+            background-color: lightgray;
+            margin: 0 auto;
+            overflow: auto;
+            position: relative;
+            width: 600px;
+        }
+
+        .boxe {
+            background-color: greenyellow;
+            border: 5px solid purple;
+            height: 100px;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .posicao-personalizada {
+            background-color: orangered;
+            /* Posicionamento */
+            /* Contexto */
+            /* position: relative; */
+            /* position: absolute; */
+            /* position: sticky; */
+            /*position: fixed;*/
+            /*
+                top: 100px;
+                left: 100px;
+                right: 100px;
+                bottom: 100px;
+            */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .posicao-referencia {
+            background-color: blueviolet;
+            position: absolute;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
     <div class="conteudo">
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
-        <div class="boxe"></div>
+        <div class="boxe">1</div>
+        <div class="boxe">2</div>
+        <div class="boxe">3</div>
+        <div class="boxe">4</div>
+        <div class="boxe">5</div>
+        <div class="boxe">6</div>
+        <div class="boxe posicao-referencia ">7</div>
+        <div class="boxe posicao-personalizada">8</div>
+        <div class="boxe">9</div>
+        <div class="boxe">10</div>
+        <div class="boxe">11</div>
+        <div class="boxe">12</div>
     </div>
 </body>
 </html>
