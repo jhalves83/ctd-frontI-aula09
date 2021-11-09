@@ -12,7 +12,16 @@ Por padrão o modelo de caixa da maioria dos navegadores considera a dimensão d
   box-sizing: content-box; 
 }
 ```
-
+### Exibição/Comportamento da caixa
+#### display: none | block | inline | inline-block | ...
+**Sintaxe**
+```css
+display: none;
+display: block;
+display: inline;
+display: inline-block;
+...
+```
 ####
 ## Posicionamento
 ### Contexto de posicionamento
@@ -23,6 +32,7 @@ Por padrão o modelo de caixa da maioria dos navegadores considera a dimensão d
   position: relative; 
 }
 ```
+
 ### Posicionamento de camadas (profundidade)
 #### z-index: posição (número)
 ``` css
