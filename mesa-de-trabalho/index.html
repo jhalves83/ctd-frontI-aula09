@@ -1,19 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa de trabalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
     <style type="text/css">
         /* Coloque o código fonte da atividade aqui */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            position: relative;
+        }
 
+        .plano {
+            border: 2px solid #0a0a0a;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            display: block;
+            position: relative;
+            top: 0px;
+        }
+
+        .preco {            
+            position: relative;
+            top: 0px;  
+            margin: 0px;          
+            padding: 0px;
+        }
+
+        .plano__sessao{
+            position: relative;
+            border-bottom: 2px solid #000000;
+            padding: 10px;
+        }
+        .preco__total {
+            font-size: 12px;
+            position: relative;
+            color: #000;
+        }
+
+        .preco__cambio {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	color: #000;
+	position: relative;
+	top: 4px;
+	vertical-align: top;
+        }
+
+        .preco__valor {
+	margin-top: 0px;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #06C;
+	position: relative;
+        }
+
+        .preco__moeda {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: top;
+	color: #06C;
+	margin-top: 0px;
+    padding-top: 0px;
+	position: relative;
+	float: none;
+	top: 4px;
+	vertical-align: top;
+        }
+
+        .lista {
+            color: #333;
+            text-align: center;
+            position: relative;
+            float: none;
+			 margin: 0px;
+            padding: 0px;
+        }
+
+        .lista__item {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: normal;
+            color: #333;
+            text-align: center;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .botao {
+            font-size: 18px;
+            color: #FFF;
+            background-color: rgb(173, 214, 76);
+            text-align: center;
+            height: 30px;
+            width: 130px;
+            border-radius: 10px;
+            vertical-align: middle;
+            position: relative;
+            border: 0px;
+        }
+
+        .integrantes{
+            border: 2px solid #0a0a0a;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            display: block;
+            position: relative;
+            top: 0px;
+            margin-top: 10px;
+        }
+
+        .integranteslista{
+            list-style-type: none;
+            font-size: 12px;
+            font-weight: normal;
+            color: #333;
+            text-align: center;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
     </style>
 </head>
+
 <body>
     <!-- O código HTML pode ser alterado se considerarem necessário. -->
     <div class="plano">
-        <div class="plano__sessao my-5">
+        <div class="plano__sessao ">
             <p class="preco">
                 <span class="preco__cambio">R$</span>
                 <span class="preco__valor">632</span>
@@ -40,5 +165,17 @@
             <li class="lista__item">R$ 50 mil</li>
         </ul>
     </div>
+
+    <div class="integrantes">
+    <ul class="integranteslista">
+        <li>Eliatã Pereira</li>
+        <li>Raphael Dutra</li>
+        <li>Tatiane Silva</li>
+        <li>Edinaldo Silva</li>
+        <li>Fabio Perez</li>
+        <li>Jonathan Alves</li>
+    </ul>
+</div>
 </body>
+
 </html>
